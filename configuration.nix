@@ -15,6 +15,9 @@
 
   # Use latest kernel
   boot.kernelPackages = pkgs.linuxPackages_latest;
+  
+  # Enable flakes
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # Hostname
   networking.hostName = "nixos";
