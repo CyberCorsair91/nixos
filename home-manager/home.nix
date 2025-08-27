@@ -4,13 +4,12 @@
   home.username = "kistkin";
   home.homeDirectory = "/home/kistkin";
 
-  # Let Home Manager manage itself
-  programs.home-manager.enable = true;
-  
   home.stateVersion = "25.05";
+  programs.home-manager.enable = true;
 
-  home.packages = with pkgs; [
-    ffmpeg
+  # Import modules
+  imports = [
+    ./modules/gtk.nix
   ];
 }
 
