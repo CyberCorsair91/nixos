@@ -11,6 +11,7 @@
       ./modules/nvidia.nix
       ./modules/bootloader.nix
       ./modules/locales.nix
+      ./modules/fonts.nix
     ];
 
   # Use latest kernel
