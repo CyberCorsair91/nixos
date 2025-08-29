@@ -8,30 +8,18 @@
     [ (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
-<<<<<<< HEAD
-  boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "thunderbolt" "usb_storage" "sd_mod" ];
-=======
   boot.initrd.availableKernelModules = [ "nvme" "xhci_pci" "thunderbolt" "usbhid" ];
->>>>>>> 34de36b (chore: replace hardware-configuration.nix)
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-<<<<<<< HEAD
-    { device = "/dev/disk/by-uuid/560b3fb5-779e-4c77-815a-87c20428dcb9";
-=======
     { device = "/dev/disk/by-uuid/9f93c120-29f9-44a1-b330-2a884c3d1581";
->>>>>>> 34de36b (chore: replace hardware-configuration.nix)
       fsType = "ext4";
     };
 
   fileSystems."/boot" =
-<<<<<<< HEAD
-    { device = "/dev/disk/by-uuid/D351-FAE8";
-=======
     { device = "/dev/disk/by-uuid/59B8-1BEF";
->>>>>>> 34de36b (chore: replace hardware-configuration.nix)
       fsType = "vfat";
       options = [ "fmask=0077" "dmask=0077" ];
     };
