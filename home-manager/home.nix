@@ -10,6 +10,7 @@
   # Import modules
   imports = [
     ./modules/gtk.nix
+    ./modules/git.nix
   ];
 }
 
